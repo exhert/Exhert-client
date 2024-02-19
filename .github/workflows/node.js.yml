@@ -4,17 +4,18 @@ on:
   push:
     branches:
       - new
-
 jobs:
   build:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [14.15.4]
     name: Build and Push
     steps:
       - name: git-checkout
         uses: actions/checkout@v3
+        
+      - name: use Nodejs
+        uses: actions/setup-node@v3
+        with:
+          node-version: '14.15.4'
 
       - name: Install all dependencies
         run: yarn install
