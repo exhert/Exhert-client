@@ -4,14 +4,15 @@
   align-items: center
   height: 48px
   padding: 0 24px
-  background: $p1
+  background: $n9
   border-radius: 24px
   +button-1
   text-align: center
-  color: $n8
+  color: $d1
   transition: all .2s
   &:hover
-    background: darken($p1, 15)
+    background: darken($d1, 15)
+    color: $n9
   &:disabled,
   &.disabled
     opacity: .5
@@ -39,14 +40,14 @@
       fill: $n8
   &:hover,
   &.active
-    background: $n2
-    box-shadow: 0 0 0 2px $n2 inset
+    background: $n9
+    box-shadow: 0 0 0 2px $n9 inset
     color: $n8
     svg
       fill: $n8
     +dark-common
-      background: $n3
-      box-shadow: 0 0 0 2px $n3 inset
+      background: $n9
+      box-shadow: 0 0 0 2px $n9 inset
 
 .button-black
   background: $n1

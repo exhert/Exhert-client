@@ -1,6 +1,8 @@
 import React from "react";
 import cn from "classnames";
 import styles from "./Steps.module.sass";
+import Slider from "react-slick";
+import Icon from "../../../components/Icon";
 
 const items = [
   {
@@ -33,7 +35,11 @@ const items = [
   },
 ];
 
+
+
 const Steps = ({ scrollToRef }) => {
+ 
+
   return (
     <div className={cn("section", styles.section)} ref={scrollToRef}>
       <div className={cn("container", styles.container)}>

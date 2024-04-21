@@ -65,7 +65,7 @@ const Header = ({ headerWide }) => {
         </Link>
         <div className={styles.wrapper}>
           <div className={cn(styles.wrap, { [styles.visible]: visibleNav })}>
-            <nav className={styles.nav}>
+            {/* <nav className={styles.nav}>
               {navigation.map((x, index) =>
                 x.dropdown ? (
                   <Dropdown
@@ -94,7 +94,7 @@ const Header = ({ headerWide }) => {
               onClick={() => setVisibleNav(false)}
             >
               Wallet
-            </NavLink>
+            </NavLink> */}
             {/* <div className={styles.btns}>
               <Link
                 className={cn("button-small", styles.button)}
@@ -112,9 +112,9 @@ const Header = ({ headerWide }) => {
               </Link>
             </div> */}
           </div>
-          <Settings className={styles.settings} />
+          {/* <Settings className={styles.settings} /> */}
           <div className={styles.control}>
-            <NavLink
+            {/* <NavLink
               className={styles.activity}
               activeClassName={styles.active}
               to="/activity"
@@ -128,32 +128,32 @@ const Header = ({ headerWide }) => {
               to="/wallet-overview"
             >
               Wallet
-            </NavLink>
+            </NavLink> */}
             <Theme className={styles.theme} icon />
-            <User className={styles.user} />
+            {/* <User className={styles.user} /> */}
           </div>
-          {/* <div className={styles.btns}>
+          <div className={styles.btns}>
             <Link
               className={cn("button-small", styles.button)}
               activeClassName={styles.active}
               to="/sign-up"
               onClick={() => setVisibleNav(false)}
             >
-              Sign Up
+              Get Early Access
             </Link>
-            <Link
+            {/* <Link
               className={cn("button-stroke button-small", styles.button)}
               activeClassName={styles.active}
               to="/sign-in"
               onClick={() => setVisibleNav(false)}
             >
               Login
-            </Link>
-          </div> */}
-          <button
+            </Link> */}
+          </div>
+          {/* <button
             className={cn(styles.burger, { [styles.active]: visibleNav })}
             onClick={() => setVisibleNav(!visibleNav)}
-          ></button>
+          ></button> */}
         </div>
       </div>
     </header>

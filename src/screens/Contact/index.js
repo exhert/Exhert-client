@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <>
       <Main />
-      <Education />
+      {/* <Education /> */}
       <Faq />
       <Question />
     </>

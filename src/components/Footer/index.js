@@ -7,22 +7,22 @@ import Icon from "../Icon";
 import Image from "../Image";
 
 const menu = [
-  {
-    title: "Exchange",
-    url: "/exchange",
-  },
-  {
-    title: "Buy crypto",
-    url: "/buy-crypto",
-  },
-  {
-    title: "Market",
-    url: "/market",
-  },
-  {
-    title: "Learn crypto",
-    url: "/learn-crypto",
-  },
+  // {
+  //   title: "Exchange",
+  //   url: "/exchange",
+  // },
+  // {
+  //   title: "Buy crypto",
+  //   url: "/buy-crypto",
+  // },
+  // {
+  //   title: "Market",
+  //   url: "/market",
+  // },
+  // {
+  //   title: "Learn crypto",
+  //   url: "/learn-crypto",
+  // },
   {
     title: "Contact",
     url: "/contact",
@@ -45,16 +45,16 @@ const socials = [
     size: "16",
     url: "https://www.instagram.com/ui8net/",
   },
-  {
-    title: "dribbble",
-    size: "16",
-    url: "https://dribbble.com/ui8",
-  },
-  {
-    title: "behance",
-    size: "20",
-    url: "https://www.behance.net/ui8",
-  },
+  // {
+  //   title: "dribbble",
+  //   size: "16",
+  //   url: "https://dribbble.com/ui8",
+  // },
+  // {
+  //   title: "behance",
+  //   size: "20",
+  //   url: "https://www.behance.net/ui8",
+  // },
 ];
 
 const Footer = () => {

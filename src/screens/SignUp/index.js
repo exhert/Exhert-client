@@ -11,11 +11,14 @@ const SignUp = () => {
 
   return (
     <Login
-      content="Already have an account?"
-      linkText="Login"
-      linkUrl="/sign-in"
+      // content="Already have an account?"
+      // linkText="Login"
+      // linkUrl="/sign-in"
     >
-      {activeIndex === 0 && <Form goNext={() => setActiveIndex(1)} />}
+      {/* {activeIndex === 0 && <Form 
+      // goNext={() => setActiveIndex(1)} 
+      />} */}
+      <Form/>
       {activeIndex === 1 && <Confirm goNext={() => setActiveIndex(2)} />}
       {activeIndex === 2 && <Code />}
     </Login>

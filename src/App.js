@@ -40,7 +40,7 @@ function App() {
             </Page>
           )}
         />
-        <Route
+        {/* <Route
           exact
           path="/market"
           render={() => (
@@ -66,7 +66,7 @@ function App() {
               <LearnCryptoDetails />
             </Page>
           )}
-        />
+        /> */}
         <Route
           exact
           path="/contact"
@@ -76,7 +76,7 @@ function App() {
             </Page>
           )}
         />
-        <Route
+        {/* <Route
           exact
           path="/notifications"
           render={() => (
@@ -228,7 +228,7 @@ function App() {
               <SignIn />
             </Page>
           )}
-        />
+        /> */}
         <Route
           exact
           path="/sign-up"
@@ -238,7 +238,7 @@ function App() {
             </Page>
           )}
         />
-        <Route
+        {/* <Route
           exact
           path="/forgot-password"
           render={() => (
@@ -247,7 +247,7 @@ function App() {
             </Page>
           )}
         />
-        <Route exact path="/pagelist" component={PageList} />
+        <Route exact path="/pagelist" component={PageList} /> */}
       </Switch>
     </Router>
   );
