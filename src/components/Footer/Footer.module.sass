@@ -1,14 +1,25 @@
 @import ../../styles/helpers
 
 .footer
-    border-top: 1px solid $n6
+    
+    justify-content: center
+    align-items: center
+    padding: 0 0 20px
+    +m 
+       padding: 0 0 48px
+       border: none
     +dark
         border-color: $n2
+       
 
 .container
     display: flex
+    margin-left: 24px
+    justify-content: center
+    align-items: center
     +m
         display: block
+        margin-left: 80px
 
 .body
     +m
@@ -48,14 +59,12 @@
             border-color: $n2
 
 .logo
-    display: inline-block
-    margin-right: 160px
-    +x
-        margin-right: 80px
-    +t
-        margin-right: 32px
-    +m
-        margin: 0 0 32px
+   display: flex
+   align-items: center
+   margin-right: 24px
+   +m
+       margin-left: 60px
+       margin-bottom: 20px
 
 .picDesktop
     +m
@@ -118,38 +127,50 @@
         margin-bottom: 24px
 
 .foot
-    padding: 25px 0 20px
     border-top: 1px solid $n6
+    justify-content: center
+    display: flex
+    flex-direction: row
+    align-items: center
+    padding: 10px 0 5px
     +m
-        padding: 56px 0 48px
-        border: none
+       border-top: 1px solid $n6  
+       
     +dark
         border-color: $n2
 
 .copyright
-    margin-right: auto
+    margin-right: 24px
     +caption-2
     color: $n4
     +m
-        margin: 0 0 24px
+        margin: 0 0 10px
+        margin-bottom: 20px
 
 .socials
     display: flex
+    margin-left: 60px
 
 .social
     display: flex
+    background-color: rgba(0, 0, 0, 0.1)
+    border-radius: 10px
     justify-content: center
     align-items: center
     flex-shrink: 0
     width: 20px
     height: 20px
     svg
-        fill: $n4
+        fill: $d1
+        +dark
+            fill: $n9
         transition: fill .2s
+
     &:hover 
+        background-color: $d1
         svg
-            fill: $n2
+            fill: $n9
             +dark
-                fill: $n8
+                fill: $n9
     &:not(:last-child)
         margin-right: 24px

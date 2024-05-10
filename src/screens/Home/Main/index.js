@@ -11,7 +11,8 @@ const Main = ({ scrollToRef }) => {
       <div className={cn("container", styles.container)}>
         <div className={styles.wrap}>
           <h1 className={cn("h1", styles.title)}>
-            Buy & sell <br></br>crypto in minutes
+            Buy & sell <br></br> 
+            <span className={styles.txt} >crypto in minutes</span>
           </h1>
           <div className={styles.text}>
             Trade Bitcoin, Ethereum, USDT, and the top altcoins on the legendary

@@ -53,14 +53,14 @@ const Header = ({ headerWide }) => {
         >
           <Image
             className={styles.picDesktop}
-            src="/images/logo-light.svg"
-            srcDark="/images/logo-dark.svg"
-            alt="BitCloud"
+            src="/images/logo2.png"
+            srcDark="/images/logo2.png"
+            alt="Exhert"
           />
           <img
             className={styles.picMobile}
-            src="/images/logo.svg"
-            alt="BitCloud"
+            src="/images/logo2.png"
+            alt="Exhert"
           />
         </Link>
         <div className={styles.wrapper}>
@@ -150,10 +150,10 @@ const Header = ({ headerWide }) => {
               Login
             </Link> */}
           </div>
-          {/* <button
+          <button
             className={cn(styles.burger, { [styles.active]: visibleNav })}
             onClick={() => setVisibleNav(!visibleNav)}
-          ></button> */}
+          ></button>
         </div>
       </div>
     </header>

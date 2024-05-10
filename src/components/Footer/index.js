@@ -67,20 +67,19 @@ const Footer = () => {
 
   return (
     <footer className={styles.footer}>
-      <div className={styles.body}>
+      {/* <div className={styles.body}>
         <div className={cn("container", styles.container)}>
           <div className={styles.col}>
             <Link className={styles.logo} to="/">
               <img
                 className={styles.picDesktop}
-                src="images/logo.svg"
+                src="images/logo2.png"
                 alt="BitCloud"
               />
               <Image
                 className={styles.picMobile}
-                src="/images/logo-light.svg"
-                srcDark="/images/logo-dark.svg"
-                alt="BitCloud"
+                src="/images/logo2.png"
+                srcDark="/images/logo2.png"
               />
             </Link>
             <div className={cn(styles.item, { [styles.active]: visible })}>
@@ -132,9 +131,22 @@ const Footer = () => {
             />
           </div>
         </div>
-      </div>
+      </div> */}
       <div className={styles.foot}>
+           
         <div className={cn("container", styles.container)}>
+        <Link className={styles.logo} to="/">
+              <img
+                className={styles.picDesktop}
+                src="images/logo2.png"
+                alt="BitCloud"
+              />
+              <Image
+                className={styles.picMobile}
+                src="/images/logo2.png"
+                srcDark="/images/logo2.png"
+              />
+            </Link>
           <div className={styles.copyright}>
             Copyright © 2021 UI8 LLC. All rights reserved
           </div>
