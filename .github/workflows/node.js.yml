@@ -3,7 +3,7 @@ name: Generate a build and push to another branch
 on:
   push:
     branches:
-      - new
+      - main
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -18,10 +18,10 @@ jobs:
           node-version: '14.15.4'
 
       - name: Install all dependencies
-        run: yarn install
+        run: npm install
 
       - name: Build
-        run: yarn build # The build command of your project
+        run: npm build # The build command of your project
 
       - name: Push
         uses: s0/git-publish-subdir-action@develop
