@@ -18,10 +18,10 @@ jobs:
           node-version: '14.15.4'
 
       - name: Install all dependencies
-        run: npm install
+        run: yarn install
 
       - name: Build
-        run: npm build # The build command of your project
+        run: yarn build # The build command of your project
 
       - name: Push
         uses: s0/git-publish-subdir-action@develop
