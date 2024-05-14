@@ -6,12 +6,13 @@ import axios from "axios";
 import {useState, useEffect} from 'react';
 
 
-/*
+/* For reference
+
 {x.positive && (
-                <div className={styles.positive}>{x.positive}</div>
-              )}
-              {x.negative && (
-                <div className={styles.negative}>{x.negative}</div>
+  <div className={styles.positive}>{x.positive}</div>
+  )}
+{x.negative && (
+  <div className={styles.negative}>{x.negative}</div>
 )} 
 
 */
