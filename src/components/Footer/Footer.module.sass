@@ -18,7 +18,7 @@
     justify-content: center
     align-items: center
     +m
-        display: block
+        display: inline-block
         margin-left: 80px
 
 .body
@@ -61,10 +61,17 @@
 .logo
    display: flex
    align-items: center
-   margin-right: 24px
+   margin-right: 60px
+   img
+        width: 136px
+        +w
+           width: 42px 
+        +t
+            width: 30px
    +m
-       margin-left: 60px
-       margin-bottom: 20px
+        margin-left: 98px
+        margin-bottom: 20px       
+            
 
 .picDesktop
     +m
@@ -128,12 +135,11 @@
 
 .foot
     border-top: 1px solid $n6
-    justify-content: center
     display: flex
-    flex-direction: row
-    align-items: center
-    padding: 10px 0 5px
+    padding: 30px 0 5px
     +m
+       display: block
+       align-items: center
        border-top: 1px solid $n6  
        
     +dark

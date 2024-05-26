@@ -11,33 +11,37 @@ import Theme from "../Theme";
 import User from "./User";
 
 const navigation = [
+  // {
+  //   title: "Exchange",
+  //   url: "/exchange",
+  // },
   {
-    title: "Exchange",
-    url: "/exchange",
+    title: "Contact Us",
+    url: "/contact",
   },
-  {
-    title: "Buy Crypto",
-    dropdown: [
-      {
-        title: "Credit card",
-        icon: "user",
-        url: "/buy-crypto",
-      },
-      {
-        title: "Bank deposit",
-        icon: "image",
-        url: "/deposit-fiat",
-      },
-    ],
-  },
-  {
-    title: "Market",
-    url: "/market",
-  },
-  {
-    title: "Discover",
-    url: "/learn-crypto",
-  },
+  // {
+  //   title: "Buy Crypto",
+  //   dropdown: [
+  //     {
+  //       title: "Credit card",
+  //       icon: "user",
+  //       url: "/buy-crypto",
+  //     },
+  //     {
+  //       title: "Bank deposit",
+  //       icon: "image",
+  //       url: "/deposit-fiat",
+  //     },
+  //   ],
+  // },
+  // {
+  //   title: "Market",
+  //   url: "/market",
+  // },
+  // {
+  //   title: "Discover",
+  //   url: "/learn-crypto",
+  // },
 ];
 
 const Header = ({ headerWide }) => {
@@ -51,21 +55,20 @@ const Header = ({ headerWide }) => {
           to="/"
           onClick={() => setVisibleNav(false)}
         >
-          <Image
-            className={styles.picDesktop}
-            src="/images/logo2.png"
-            srcDark="/images/logo2.png"
-            alt="Exhert"
-          />
-          <img
-            className={styles.picMobile}
-            src="/images/logo2.png"
-            alt="Exhert"
-          />
-        </Link>
+              <img
+                className={styles.picDesktop}
+                src="images/logo-ex.png"
+                alt="Exhert"
+              />
+              <Image
+                className={styles.picMobile}
+                src="/images/logo2.png"
+                srcDark="/images/logo2.png"
+              />
+            </Link>
         <div className={styles.wrapper}>
           <div className={cn(styles.wrap, { [styles.visible]: visibleNav })}>
-            {/* <nav className={styles.nav}>
+            <nav className={styles.nav}>
               {navigation.map((x, index) =>
                 x.dropdown ? (
                   <Dropdown
@@ -87,7 +90,7 @@ const Header = ({ headerWide }) => {
                 )
               )}
             </nav>
-            <NavLink
+            {/* <NavLink
               className={cn("button-stroke", styles.button)}
               activeClassName={styles.active}
               to="/wallet-overview"
@@ -95,22 +98,22 @@ const Header = ({ headerWide }) => {
             >
               Wallet
             </NavLink> */}
-            {/* <div className={styles.btns}>
+            <div className={styles.btns}>
               <Link
                 className={cn("button-small", styles.button)}
                 activeClassName={styles.active}
                 to="/sign-up"
               >
-                Sign Up
+                Get Early Access
               </Link>
-              <Link
+              {/* <Link
                 className={cn("button-stroke button-small", styles.button)}
                 activeClassName={styles.active}
                 to="/sign-in"
               >
                 Login
-              </Link>
-            </div> */}
+              </Link> */}
+            </div>
           </div>
           {/* <Settings className={styles.settings} /> */}
           <div className={styles.control}>

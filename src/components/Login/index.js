@@ -9,12 +9,12 @@ const Login = ({ className, content, linkText, linkUrl, children }) => {
       <div
         className={styles.col}
         style={{
-          backgroundImage: "url(/images/content/bg-login.png)",
+          backgroundImage: "url(/images/content/signpic.jpg)",
         }}
       >
         <Link className={styles.logo} to="/">
-          <img src="/images/logo-light.svg" alt="BitCloud" />
-          <img src="/images/logo-dark.svg" alt="BitCloud" />
+          <img src="/images/logo2.svg" alt="Exhert" />
+          <img src="/images/logo2.svg" alt="Exhert" />
         </Link>
       </div>
       <div className={styles.col}>

@@ -3,12 +3,17 @@
 .main
     position: relative
     padding-top: 160px
+    display: flex
     overflow: hidden
     +d
         padding-top: 80px
     +m
         padding-top: 32px
-    
+
+.container
+     +m
+        
+        direction: column-reverse
 
 .wrap
     position: relative
@@ -19,24 +24,27 @@
         max-width: 420px
         margin-bottom: 80px
     +m
-        margin-bottom: 16px
+        text-align: center
 
 .title
     margin-bottom: 20px
 .txt
-    color: $d1
+    color: $n9
 
 .text
     margin-bottom: 32px
     +body-2
-    color: $n4
     +t
         max-width: 300px
+    +m   
+        max-width: 100vh
 
 .button
     margin-bottom: 80px
     +d
         margin-bottom: 0
+    +m
+       width: 100%   
 
 .scroll
     +d

@@ -132,9 +132,10 @@ const Footer = () => {
           </div>
         </div>
       </div> */}
-      <div className={styles.foot}>
+     
            
         <div className={cn("container", styles.container)}>
+        <div className={styles.foot}>
         <Link className={styles.logo} to="/">
               <img
                 className={styles.picDesktop}

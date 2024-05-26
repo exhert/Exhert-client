@@ -21,9 +21,6 @@ const AboutUs = ({ scrollToRef }) => {
           <div className={styles.info}>
             Anytime, anywhere. Trade crypto on your terms.
           </div>
-          <div className={styles.list}>
-          Anytime, anywhere. Trade crypto on your terms.
-          </div>
         </div>
       </div>
     </div>
