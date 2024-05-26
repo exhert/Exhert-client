@@ -135,7 +135,7 @@ const Footer = () => {
      
            
         <div className={cn("container", styles.container)}>
-        <div className={styles.foot}>
+        {/* <div className={styles.foot}> */}
         <Link className={styles.logo} to="/">
               <img
                 className={styles.picDesktop}
@@ -165,7 +165,7 @@ const Footer = () => {
             ))}
           </div>
         </div>
-      </div>
+      {/* </div> */}
     </footer>
   );
 };
