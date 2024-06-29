@@ -46,11 +46,11 @@ const socials = [
     size: "16",
     url: "https://www.instagram.com/exhertexchange?igsh=MTFrbDNtaXI4NDhpeQ==",
   },
-  // {
-  //   title: "dribbble",
-  //   size: "16",
-  //   url: "https://www.tiktok.com/@exhert7?_t=8n7G9UteVaX&_r=1",
-  // },
+  {
+    title: "dribbble",
+    size: "16",
+    url: "https://www.tiktok.com/@exhert7?_t=8n7G9UteVaX&_r=1",
+  },
   // {
   //   title: "behance",
   //   size: "20",
@@ -138,10 +138,10 @@ const Footer = () => {
         <div className={cn("container", styles.container)}>
         {/* <div className={styles.foot}> */}
         <Link className={styles.logo} to="/">
-              <img
+        <img
                 className={styles.picDesktop}
-                src="images/logo2.png"
-                alt="BitCloud"
+                src="images/logo-ex.png"
+                alt="Exhert"
               />
               <Image
                 className={styles.picMobile}
