@@ -73,25 +73,26 @@
             border-color: $n2
 
 .logo
-   display: flex
-   justify-content: center
-   align-items: center
-   margin-right: 30px
-   img
-        width: 360px
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-right: 32px
+    +t
+        margin-right: 16px
+    +m
+        position: relative
+        z-index: 15
+        margin-right: auto 
+        margin-bottom: 30px 
+    img
+        width: 36px
         +w
-           width: 70px 
-        +x
-            width: 30px  
+           width: 42px 
         +t
-            width: 30px
-   +m
-        margin-right: none
-        margin-bottom: 20px       
+            width: 30px     
             
 
 .picDesktop
-    display: block 
     +m
         display: none
 
