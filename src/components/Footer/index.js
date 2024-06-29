@@ -6,6 +6,7 @@ import Form from "../Form";
 import Icon from "../Icon";
 import Image from "../Image";
 
+
 const menu = [
   // {
   //   title: "Exchange",
@@ -33,22 +34,22 @@ const socials = [
   {
     title: "facebook",
     size: "16",
-    url: "https://www.facebook.com/ui8.net/",
+    url: "https://www.facebook.com/profile.php?id=61561077623847",
   },
   {
     title: "twitter",
     size: "18",
-    url: "https://twitter.com/ui8",
+    url: "https://x.com/EXHERTexchange?t=s5Jd3JQUc8RNTCT8DVlO9g&s=08",
   },
   {
     title: "instagram",
     size: "16",
-    url: "https://www.instagram.com/ui8net/",
+    url: "https://www.instagram.com/exhertexchange?igsh=MTFrbDNtaXI4NDhpeQ==",
   },
   // {
   //   title: "dribbble",
   //   size: "16",
-  //   url: "https://dribbble.com/ui8",
+  //   url: "https://www.tiktok.com/@exhert7?_t=8n7G9UteVaX&_r=1",
   // },
   // {
   //   title: "behance",
@@ -148,9 +149,9 @@ const Footer = () => {
                 srcDark="/images/logo2.png"
               />
             </Link>
-          <div className={styles.copyright}>
-            Copyright © 2021 UI8 LLC. All rights reserved
-          </div>
+          <h1 className={cn("h1",styles.copyright)}>
+            © 2024 Exhert. All rights reserved
+          </h1>
           <div className={styles.socials}>
             {socials.map((x, index) => (
               <a

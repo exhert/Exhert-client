@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import styles from "./Main.module.sass";
 import ScrollButton from "../../../components/ScrollButton";
 import Cards from "./Cards";
+import Form from "../Form";
 
 const Main = ({ scrollToRef }) => {
   return (
@@ -17,15 +18,15 @@ const Main = ({ scrollToRef }) => {
           />
         </div>
         <div className={styles.wrap}>
-          <h1 className={cn("h1", styles.title)}>
-            Buy & sell <br></br> 
-            <span className={styles.txt} >crypto in minutes</span>
-          </h1>
+          <h2 className={cn("h2", styles.title)}>
+            Where trading <br></br> 
+            <span className={styles.txt} >Meets Innovation</span>
+          </h2>
           <div className={styles.text}>
             Trade Bitcoin, Ethereum, USDT, and the top altcoins on the legendary
             crypto asset exchange.
           </div>
-          <Link className={cn("button", styles.button)} to="/sign-up">
+          {/* <Link className={cn("button", styles.button)} to="/sign-up">
             Get started now
           </Link>
           <ScrollButton
@@ -33,7 +34,8 @@ const Main = ({ scrollToRef }) => {
               scrollToRef.current.scrollIntoView({ behavior: "smooth" })
             }
             className={styles.scroll}
-          />
+          /> */}
+          <Form/>
         </div>
       
         <Cards className={styles.cards} />

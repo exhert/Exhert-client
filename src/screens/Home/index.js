@@ -16,13 +16,13 @@ const Home = () => {
     <>
       <Main scrollToRef={scrollToRef} />
       {/* <Learn scrollToRef={scrollToRef} /> */}
-      <AboutUs/>
+      {/* <AboutUs/> */}
       {/* <Trend /> */}
-      <Popular classSection="section-bg section-mb0" />
+      {/* <Popular classSection="section-bg section-mb0" /> */}
       {/* <Download />
       <News classSection="section-bg" /> */}
       <Steps />
-      <Newsletter/>
+      {/* <Newsletter/> */}
     </>
   );
 };

@@ -4,14 +4,14 @@
     position: relative
     z-index: 10
     padding: 20px 0
-    box-shadow: inset 0 -1px 0 $n6
+    box-shadow: inset 0 1px 0 $n6
     +m
         padding: 32px 0 24px
-        box-shadow: none
+        box-shadow: inset 0 1px 0 $n6
     +dark
-        box-shadow: inset 0 -1px 0 $n2
+        box-shadow: inset 0 1px 0 $n2
         +m
-            box-shadow: none
+            box-shadow: inset 0 1px 0 $n2
     &.wide
         box-shadow: none
         .container
@@ -22,7 +22,7 @@
 
 .container
     display: flex
-    justify-content: space-between
+    justify-content: center
     align-items: center
     +d
         padding: 0 80px
@@ -76,8 +76,9 @@
    display: flex
    justify-content: center
    align-items: center
+   margin-right: 30px
    img
-        width: 50px
+        width: 360px
         +w
            width: 70px 
         +x
@@ -90,6 +91,7 @@
             
 
 .picDesktop
+    display: block 
     +m
         display: none
 
@@ -163,7 +165,7 @@
     display: flex
     justify-content: center
     margin-right: 24px
-    +caption-2
+    +body-2
     color: $n4
     +m
         margin: 0 24px 10px
@@ -178,12 +180,15 @@
 .social
     display: flex
     background-color: rgba(0, 0, 0, 0.1)
-    border-radius: 10px
+    border-radius: 100%
     justify-content: center
     align-items: center
     flex-shrink: 0
-    width: 20px
-    height: 20px
+    width: 30px
+    height: 30px
+    transition: all .2s
+    +dark
+        background-color: $n2
     svg
         fill: $d1
         +dark
@@ -191,9 +196,9 @@
         transition: fill .2s
 
     &:hover 
-        background-color: $d1
+        background-color: rgba(0, 0, 0, 0.3)
         svg
-            fill: $n9
+            fill: $d1
             +dark
                 fill: $n9
     &:not(:last-child)

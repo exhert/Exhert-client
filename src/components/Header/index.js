@@ -98,14 +98,14 @@ const Header = ({ headerWide }) => {
             >
               Wallet
             </NavLink> */}
-            <div className={styles.btns}>
+            {/* <div className={styles.btns}>
               <Link
                 className={cn("button-small", styles.button)}
                 activeClassName={styles.active}
                 to="/sign-up"
               >
                 Get Early Access
-              </Link>
+              </Link> */}
               {/* <Link
                 className={cn("button-stroke button-small", styles.button)}
                 activeClassName={styles.active}
@@ -113,7 +113,7 @@ const Header = ({ headerWide }) => {
               >
                 Login
               </Link> */}
-            </div>
+            {/* </div> */}
           </div>
           {/* <Settings className={styles.settings} /> */}
           <div className={styles.control}>
@@ -135,7 +135,7 @@ const Header = ({ headerWide }) => {
             <Theme className={styles.theme} icon />
             {/* <User className={styles.user} /> */}
           </div>
-          <div className={styles.btns}>
+          {/* <div className={styles.btns}>
             <Link
               className={cn("button-small", styles.button)}
               activeClassName={styles.active}
@@ -143,7 +143,7 @@ const Header = ({ headerWide }) => {
               onClick={() => setVisibleNav(false)}
             >
               Get Early Access
-            </Link>
+            </Link> */}
             {/* <Link
               className={cn("button-stroke button-small", styles.button)}
               activeClassName={styles.active}
@@ -152,7 +152,7 @@ const Header = ({ headerWide }) => {
             >
               Login
             </Link> */}
-          </div>
+          {/* </div> */}
           <button
             className={cn(styles.burger, { [styles.active]: visibleNav })}
             onClick={() => setVisibleNav(!visibleNav)}
