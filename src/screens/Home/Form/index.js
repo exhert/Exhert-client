@@ -38,8 +38,8 @@ const Form = ({
          name="email"
         required
       />
-      <button className={styles.btn}>
-        Jion Waitlist
+      <button className={cn("button",styles.btn)}>
+        Join Waitlist
       </button>
     </form>
   );

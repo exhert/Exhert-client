@@ -7,9 +7,9 @@ import Question from "./Question";
 const Home = () => {
   return (
     <>
-      <Main />
-      {/* <Education /> */}
-      <Faq />
+      {/* <Main />
+      <Education />
+      <Faq /> */}
       <Question />
     </>
   );

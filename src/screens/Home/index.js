@@ -8,20 +8,22 @@ import News from "../../components/News";
 import Steps from "./Steps";
 import Newsletter from "./News";
 import AboutUs from "./about";
+import Feature from "./Features";
 
 const Home = () => {
-  const scrollToRef = useRef(null);
+  // const scrollToRef = useRef(null);
 
   return (
     <>
-      <Main scrollToRef={scrollToRef} />
+      <Main />
       {/* <Learn scrollToRef={scrollToRef} /> */}
       {/* <AboutUs/> */}
       {/* <Trend /> */}
       {/* <Popular classSection="section-bg section-mb0" /> */}
       {/* <Download />
       <News classSection="section-bg" /> */}
-      <Steps />
+      {/* <Steps /> */}
+      <Feature/>
       {/* <Newsletter/> */}
     </>
   );
