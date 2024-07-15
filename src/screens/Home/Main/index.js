@@ -5,6 +5,37 @@ import styles from "./Main.module.sass";
 import ScrollButton from "../../../components/ScrollButton";
 import Cards from "./Cards";
 import Form from "../Form";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {faFacebook, faTiktok, faTwitter, faInstagram} from "@fortawesome/free-brands-svg-icons"
+
+
+const socials = [
+  {
+    title: faFacebook,
+    size: "16",
+    url: "https://www.facebook.com/profile.php?id=61561077623847",
+  },
+  {
+    title: faTwitter,
+    size: "18",
+    url: "https://x.com/EXHERTexchange?t=s5Jd3JQUc8RNTCT8DVlO9g&s=08",
+  },
+  {
+    title: faInstagram,
+    size: "16",
+    url: "https://www.instagram.com/exhertexchange?igsh=MTFrbDNtaXI4NDhpeQ==",
+  },
+  {
+    title: faTiktok,
+    size: "16",
+    url: "https://www.tiktok.com/@exhert7?_t=8n7G9UteVaX&_r=1",
+  },
+  // {
+  //   title: "behance",
+  //   size: "20",
+  //   url: "https://www.behance.net/ui8",
+  // },
+];
 
 const Main = ({ scrollToRef }) => {
   return (
@@ -36,6 +67,24 @@ const Main = ({ scrollToRef }) => {
             className={styles.scroll}
           /> */}
           <Form/>
+          <div className={styles.socialLink}>
+          <div className={styles.tex}>
+            Connect to:
+          </div>
+          <div className={styles.socials}>
+            {socials.map((x, index) => (
+              <a
+                className={styles.social}
+                href={x.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                key={index}
+              >
+              <FontAwesomeIcon icon={x.title} size={x.size} />
+              </a>
+            ))}
+          </div>
+          </div>
         </div>
       
         <Cards className={styles.cards} />

@@ -5,10 +5,10 @@ import styles from "./Footer.module.sass";
 import Form from "../Form";
 import Icon from "../Icon";
 import Image from "../Image";
-import { FaTiktok } from "react-icons/fa"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {faFacebook, faTiktok, faTwitter, faInstagram} from "@fortawesome/free-brands-svg-icons"
 
 
-const TiktokIcon = <FaTiktok/>;
 
 const menu = [
   // {
@@ -35,22 +35,22 @@ const menu = [
 
 const socials = [
   {
-    title: "facebook",
-    size: "16",
+    title: faFacebook,
+    size: "24",
     url: "https://www.facebook.com/profile.php?id=61561077623847",
   },
   {
-    title: "twitter",
+    title: faTwitter,
     size: "18",
     url: "https://x.com/EXHERTexchange?t=s5Jd3JQUc8RNTCT8DVlO9g&s=08",
   },
   {
-    title: "instagram",
+    title: faInstagram,
     size: "16",
     url: "https://www.instagram.com/exhertexchange?igsh=MTFrbDNtaXI4NDhpeQ==",
   },
   {
-    title: TiktokIcon,
+    title: faTiktok,
     size: "16",
     url: "https://www.tiktok.com/@exhert7?_t=8n7G9UteVaX&_r=1",
   },
@@ -164,7 +164,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 key={index}
               >
-                <Icon name={x.title} size={x.size} />
+              <FontAwesomeIcon icon={x.title} size={x.size} />
               </a>
             ))}
           </div>

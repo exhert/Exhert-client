@@ -27,8 +27,10 @@ const Question = () => {
     <div className={cn("section-bg section-mb0", styles.section)}>
       <div className={cn("container", styles.container)}>
         <form className={styles.form} action="">
+          <h2 className={cn("h2", styles.title)}>Get in touch</h2>
           <div className={styles.fieldset}>
-            <div className={styles.field}>
+            
+            {/* <div className={styles.field}>
               <div className={styles.label}>Select a topic</div>
               <div className={styles.variants}>
                 <label className={styles.radio}>
@@ -68,8 +70,8 @@ const Question = () => {
                   </span>
                 </label>
               </div>
-            </div>
-            <div className={styles.field}>
+            </div> */}
+            {/* <div className={styles.field}>
               <Dropdown
                 className={styles.dropdown}
                 label="What is your issue about?"
@@ -86,7 +88,7 @@ const Question = () => {
                 setValue={setCategory}
                 options={optionsCategory}
               />
-            </div>
+            </div> */}
             <TextInput
               className={styles.field}
               label="Email address"
