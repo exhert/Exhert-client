@@ -70,7 +70,7 @@ const Cards = ({ className }) => {
     console.log(coins),
     <div className={cn(className, styles.cards)}>
       {coins.map((x, index) => (
-        <Link className={styles.card} key={index} to={"/sign-up"}>
+        <Link className={styles.card} key={index} to={"/"}>
           <div className={styles.icon}>
             <img src={x.image} alt="Currency" />
           </div>
