@@ -43,8 +43,8 @@ const Question = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post("http://localhost:8000/subscribe/contact", formData);
-     // const response = await axios.post("https://email.subscription-v64o.onrender.com/subscribe/contact", formData);
+      // const response = await axios.post("http://localhost:8000/subscribe/contact", formData);
+     const response = await axios.post("https://email.subscription-v64o.onrender.com/subscribe/contact", formData);
       console.log(response.data);
       toast.success(response.data.message);
     } catch (error) {

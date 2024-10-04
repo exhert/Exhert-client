@@ -35,8 +35,8 @@ const Form = ({
      }
 
       try {
-         const response = await axios.post("http://localhost:8000/subscribe/signup", data
-          //const response = await axios.post("https://email.subscription-v64o.onrender.com/subscribe/signup", data
+        //  const response = await axios.post("http://localhost:8000/subscribe/signup", data
+          const response = await axios.post("https://email.subscription-v64o.onrender.com/subscribe/signup", data
           , {headers}
          );
          console.log(response.data);
