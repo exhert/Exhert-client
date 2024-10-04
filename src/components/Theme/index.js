@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import cn from "classnames";
 import styles from "./Theme.module.sass";
 import useDarkMode from "use-dark-mode";
@@ -7,6 +7,10 @@ import Icon from "../Icon";
 const Theme = ({ className, icon, small }) => {
   // Initialize dark mode with default value as true
   const darkMode = useDarkMode(true);
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', darkMode.value ? 'dark' : 'light');
+  }, [darkMode.value]);
 
   return (
     <label className={cn(className, styles.theme, { [styles.small]: small })}>

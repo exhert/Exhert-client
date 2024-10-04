@@ -13,13 +13,19 @@
 .wrap
     position: relative
     z-index: 3
-    max-width: 545px
+    max-width: 913px
     margin-bottom: 143px
+    +p
+        width: 50%
     +d
-        max-width: 420px
         margin-bottom: 80px
+        width: 50%
+    +t
+        width: 50%  
     +m
-        text-align: center
+        width: 100%
+        text-align: center 
+        
 
 .title
     margin-bottom: 20px
@@ -30,9 +36,9 @@
     margin-bottom: 32px
     +body-2
     +t
-        max-width: 300px
+        max-width: 400px
     +m   
-        max-width: 100vh
+        max-width: 100%
 .tex
     margin: 30px 0
     +body-2
@@ -44,7 +50,10 @@
     align-items: center
     width: 100% 
     +m
-        justify-content: space-between
+       width: 70% 
+    +s
+        width: 100%    
+        
 .titl
     margin-top: 20px
 
@@ -68,7 +77,7 @@
     transition: all .2s
     +dark
         color: $white
-        background-color: $n2
+        background-color: $n2 
     svg
         fill: $d1
         +dark

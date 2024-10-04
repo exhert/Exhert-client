@@ -5,6 +5,8 @@ import Icon from "../../../components/Icon";
 import Dropdown from "../../../components/Dropdown";
 import TextInput from "../../../components/TextInput";
 import TextArea from "../../../components/TextArea";
+import axios from "axios";
+import { toast } from 'react-toastify';
 
 const optionsCurrency = [
   "Have a question about Bitcloud fees",
@@ -23,10 +25,40 @@ const Question = () => {
   const [category, setCategory] = useState(optionsCategory[0]);
   const [topic, setTopic] = useState(true);
 
+  
+
+  const [formData,setFormData] = useState(
+    {
+    name: '',
+    email: '',
+    message: ''
+    }
+  );
+
+  const handleChange = (e) => {
+    setFormData({...formData , [e.target.name]: e.target.value});
+  }
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await axios.post("http://localhost:8000/subscribe/contact", formData);
+     // const response = await axios.post("https://email.subscription-v64o.onrender.com/subscribe/contact", formData);
+      console.log(response.data);
+      toast.success(response.data.message);
+    } catch (error) {
+      console.error('There was an error sending the message!', error);
+      toast.error(error.message)
+    }
+  };
+
+   
+
   return (
     <div className={cn("section-bg section-mb0", styles.section)}>
       <div className={cn("container", styles.container)}>
-        <form className={styles.form} action="">
+        <form className={styles.form} onSubmit={handleSubmit}>
           <h2 className={cn("h2", styles.title)}>Get in touch</h2>
           <div className={styles.fieldset}>
             
@@ -89,18 +121,20 @@ const Question = () => {
                 options={optionsCategory}
               />
             </div> */}
+             <TextInput
+              className={styles.field}
+              label="name"
+              name="name"
+              type="text"
+              onChange={handleChange}
+              required
+            />
             <TextInput
               className={styles.field}
               label="Email address"
               name="email"
               type="email"
-              required
-            />
-            <TextInput
-              className={styles.field}
-              label="Subject"
-              name="subject"
-              type="text"
+              onChange={handleChange}
               required
             />
             <TextArea
@@ -108,6 +142,7 @@ const Question = () => {
               label="message"
               name="message"
               placeholder="Say something"
+              onChange={handleChange}
               required
             />
           </div>

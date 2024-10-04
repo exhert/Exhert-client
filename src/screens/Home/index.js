@@ -11,20 +11,19 @@ import AboutUs from "./about";
 import Feature from "./Features";
 
 const Home = () => {
-  // const scrollToRef = useRef(null);
+   const scrollToRef = useRef(null);
 
   return (
     <>
       <Main />
-      {/* <Learn scrollToRef={scrollToRef} /> */}
-      {/* <AboutUs/> */}
-      {/* <Trend /> */}
-      {/* <Popular classSection="section-bg section-mb0" /> */}
-      {/* <Download />
-      <News classSection="section-bg" /> */}
-      {/* <Steps /> */}
+      {/* <Learn scrollToRef={scrollToRef} />
+      <AboutUs/>
+      <Trend />
+      <Popular classSection="section-bg section-mb0" />
+      <Download />
+      <News classSection="section-bg" />
+      <Steps /> */}
       <Feature/>
-      {/* <Newsletter/> */}
     </>
   );
 };

@@ -12,8 +12,8 @@ const items = [
     content:
       "Mobile payment has revolutionized the way we transact, offering convenience and efficiency.",
     button: "Buy crypto",
-    image: "/images/content/card-pic-1.png",
-    image2x: "/images/content/card-pic-1@2x.png",
+    image: "/images/fasttransfer1.png",
+    image2x: "/images/fasttransfer.png",
     url: "/buy-crypto",
   },
   {
@@ -21,8 +21,8 @@ const items = [
     content:
       "Security and control over your money are paramount, and with our platform.",
     button: "Trade now",
-    image: "/images/content/card-pic-2.png",
-    image2x: "/images/content/card-pic-2@2x.png",
+    image: "/images/shield.png",
+    image2x: "/images/shield.png",
     icon: "payement",
     url: "/exchange",
   },
@@ -31,8 +31,8 @@ const items = [
     content:
       "We realize ideas from simple to complex, everything becomes easy to use and reach the most potential customers.",
     button: "Learn now",
-    image: "/images/content/card-pic-3.png",
-    image2x: "/images/content/card-pic-3@2x.png",
+    image: "/images/icon-1.png",
+    image2x: "/images/icon-1.png",
     icon: "payement",
     url: "/learn-crypto",
   },
@@ -56,7 +56,7 @@ const Feature = () => {
  
 
   return (
-    <div className={cn("section-bg section-mb0" ,styles.section )}>
+    <div className={cn("section section-mb0" ,styles.section )}>
       <div className={cn("container", styles.container)}>
         <div className={styles.head}>
           <h2 className={cn("h2", styles.title)}>
