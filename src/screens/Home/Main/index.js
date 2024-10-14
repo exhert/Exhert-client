@@ -12,7 +12,7 @@ import {faFacebook, faTiktok, faTwitter, faInstagram} from "@fortawesome/free-br
 const socials = [
   {
     title: faFacebook,
-    size: "16",
+    size: "25",
     url: "https://www.facebook.com/profile.php?id=61561077623847",
   },
   {
@@ -54,8 +54,8 @@ const Main = ({ scrollToRef }) => {
             <span className={styles.txt} >Meets Innovation</span>
           </h2>
           <div className={styles.text}>
-            Trade Bitcoin, Ethereum, USDT, and the top altcoins on the legendary
-            crypto asset exchange.
+          Trade cryptocurrencies with ease, confidence, and flexibility. 
+          Whether you're buying or selling, Exhert has your back.
           </div>
           {/* <Link className={cn("button", styles.button)} to="/sign-up">
             Get started now
