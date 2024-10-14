@@ -17,10 +17,10 @@ const AboutUs = ({ scrollToRef }) => {
           />
         </div>
         <div className={styles.wrap}>
-          <h2 className={cn("h2", styles.title)}>What is ExHert</h2>
-          <div className={styles.info}>
+          <h2 className={cn("h2", styles.title)}>Why Exhert?</h2>
+          {/* <div className={styles.info}>
             Anytime, anywhere. Trade crypto on your terms.
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

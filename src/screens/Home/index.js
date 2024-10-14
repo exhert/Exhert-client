@@ -16,14 +16,14 @@ const Home = () => {
   return (
     <>
       <Main />
-      {/* <Learn scrollToRef={scrollToRef} />
       <AboutUs/>
+      <Feature/>
+      <Steps/>
+      {/* <Learn scrollToRef={scrollToRef} />
       <Trend />
       <Popular classSection="section-bg section-mb0" />
       <Download />
-      <News classSection="section-bg" />
-      <Steps /> */}
-      <Feature/>
+      <News classSection="section-bg" /> */}
     </>
   );
 };

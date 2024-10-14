@@ -8,18 +8,18 @@ import Card from "./Card";
 
 const items = [
   {
-    title: "Mobile Payment Make Easy",
+    title: "Mobile Money Convenience",
     content:
-      "Mobile payment has revolutionized the way we transact, offering convenience and efficiency.",
+      "Trading crypto has never been easier. Use your mobile money wallet for instant transactions.",
     button: "Buy crypto",
     image: "/images/fasttransfer1.png",
     image2x: "/images/fasttransfer.png",
     url: "/buy-crypto",
   },
   {
-    title: "Security & Control Over Money",
+    title: "Safe & Secure",
     content:
-      "Security and control over your money are paramount, and with our platform.",
+      "Our escrow system ensures both you and the other party are protected throughout the trade. Your funds are safe until the transaction is complete",
     button: "Trade now",
     image: "/images/shield.png",
     image2x: "/images/shield.png",
@@ -27,9 +27,9 @@ const items = [
     url: "/exchange",
   },
   {
-    title: "Transaction at low fee cost",
+    title: "Flexible Trading",
     content:
-      "We realize ideas from simple to complex, everything becomes easy to use and reach the most potential customers.",
+      "If you can’t find the right offer on the platform, don’t worry. You can trade directly with Exhert at our fixed rates—no need to wait for another user.",
     button: "Learn now",
     image: "/images/icon-1.png",
     image2x: "/images/icon-1.png",
@@ -37,9 +37,9 @@ const items = [
     url: "/learn-crypto",
   },
   {
-    title: "Protect The Identity",
+    title: "User-Friendly Experience",
     content:
-      "Safeguarding your identity is our top priority. With our platform, we employ state-of-the-art.",
+      "From beginners to seasoned traders, we’ve designed Exhert to be simple and intuitive for everyone.",
     button: "Trade now",
     image: "/images/content/card-pic-2.png",
     image2x: "/images/content/card-pic-2@2x.png",
@@ -59,9 +59,9 @@ const Feature = () => {
     <div className={cn("section section-mb0" ,styles.section )}>
       <div className={cn("container", styles.container)}>
         <div className={styles.head}>
-          <h2 className={cn("h2", styles.title)}>
-            Our Features
-          </h2>
+          {/* <h2 className={cn("h2", styles.title)}>
+            Why Exhert?
+          </h2> */}
         </div>
         <div className={styles.wrapper}>
             {items.map((x, index) => (

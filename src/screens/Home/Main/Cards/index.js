@@ -76,7 +76,7 @@ const Cards = ({ className }) => {
           </div>
           <div className={styles.details}>
             <div className={styles.line}>
-              <div className={styles.title}>{ x.id[0].toUpperCase() + x.id.slice(1) }</div>
+              <div className={styles.title}>{ x.symbol.toUpperCase() }</div>
               {x.price_change_percentage_24h > 0 && (
                 <div className={styles.positive}>{"+" + Math.round(x.price_change_percentage_24h * 100) / 100  + "%"}</div>
               )}
@@ -85,8 +85,8 @@ const Cards = ({ className }) => {
               )}
               
             </div>
-            <div className={styles.price}>{x.current_price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}</div>
-            <div className={styles.money}>{'$' + x.current_price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}</div>
+            <div className={styles.price}>${Math.round(x.current_price).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}</div>
+            {/* <div className={styles.money}>{'$' + x.current_price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}</div> */}
           </div>
         </Link>
       ))}
