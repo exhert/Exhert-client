@@ -12,8 +12,8 @@ const items = [
     content:
       "Trading crypto has never been easier. Use your mobile money wallet for instant transactions.",
     button: "Buy crypto",
-    image: "/images/content/fasttransfer.png",
-    image2x: "/images/content/fasttransfer.png 2x",
+    image: "/images/fasttransfer1.png",
+    image2x: "/images/fasttransfer.png",
     url: "/buy-crypto",
   },
   {
@@ -21,18 +21,8 @@ const items = [
     content:
       "Our escrow system ensures both you and the other party are protected throughout the trade. Your funds are safe until the transaction is complete",
     button: "Trade now",
-    image: "/images/content/shield.png",
-    image2x: "/images/content/shield.png 2x",
-    icon: "payement",
-    url: "/exchange",
-  },
-  {
-    title: "User-Friendly Experience",
-    content:
-    "From beginners to seasoned traders, we’ve designed Exhert to be simple and intuitive for everyone.",
-    button: "Trade now",
-    image: "/images/content/ufe.png",
-    image2x: "/images/content/ufe.png 2x",
+    image: "/images/shield.png",
+    image2x: "/images/shield.png",
     icon: "payement",
     url: "/exchange",
   },
@@ -41,10 +31,20 @@ const items = [
     content:
       "If you can’t find the right offer on the platform, don’t worry. You can trade directly with Exhert at our fixed rates—no need to wait for another user.",
     button: "Learn now",
-    image: "/images/content/flexible-trading.png",
-    image2x: "/images/content/flexible-trading.png 2x",
+    image: "/images/icon-1.png",
+    image2x: "/images/icon-1.png",
     icon: "payement",
     url: "/learn-crypto",
+  },
+  {
+    title: "User-Friendly Experience",
+    content:
+      "From beginners to seasoned traders, we’ve designed Exhert to be simple and intuitive for everyone.",
+    button: "Trade now",
+    image: "/images/content/card-pic-2.png",
+    image2x: "/images/content/card-pic-2@2x.png",
+    icon: "payement",
+    url: "/exchange",
   },
 ];
 
@@ -58,6 +58,11 @@ const Feature = () => {
   return (
     <div className={cn("section section-mb0" ,styles.section )}>
       <div className={cn("container", styles.container)}>
+        <div className={styles.head}>
+          {/* <h2 className={cn("h2", styles.title)}>
+            Why Exhert?
+          </h2> */}
+        </div>
         <div className={styles.wrapper}>
             {items.map((x, index) => (
               <Card className={styles.card} item={x} key={index} />

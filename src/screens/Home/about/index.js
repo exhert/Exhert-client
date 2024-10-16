@@ -11,16 +11,16 @@ const AboutUs = ({ scrollToRef }) => {
       <div className={cn("container", styles.container)}>
         <div className={styles.bg}>
           <img
-            srcSet="/images/content/why.png"
-            src="/images/content/why.png"
+            srcSet="/images/content/download-pic@2x.png 2x"
+            src="/images/content/download-pic.png"
             alt="Download"
           />
         </div>
         <div className={styles.wrap}>
           <h2 className={cn("h2", styles.title)}>Why Exhert?</h2>
-          <div className={styles.info}>
+          {/* <div className={styles.info}>
             Anytime, anywhere. Trade crypto on your terms.
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

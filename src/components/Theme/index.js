@@ -6,7 +6,7 @@ import Icon from "../Icon";
 
 const Theme = ({ className, icon, small }) => {
   // Initialize dark mode with default value as true
-  const darkMode = useDarkMode(false);
+  const darkMode = useDarkMode(true);
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', darkMode.value ? 'dark' : 'light');
