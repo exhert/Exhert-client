@@ -55,15 +55,21 @@ const Header = ({ headerWide }) => {
           to="/"
           onClick={() => setVisibleNav(false)}
         >
-              <img
+              {/* <img
                 className={styles.picDesktop}
-                src="images/logo-ex.png"
+                src="images/logo_light.png"
+                srcSet="images/logo_dark.png"
                 alt="Exhert"
+              /> */}
+              <Image
+              className={styles.picDesktop}
+              src="/images/logo_light.png"
+              srcDark="/images/logo_dark.png"
               />
               <Image
                 className={styles.picMobile}
-                src="/images/logo2.png"
-                srcDark="/images/logo2.png"
+                src="/images/logo_mobile.png"
+                srcDark="/images/logo_mobile.png"
               />
             </Link>
         <div className={styles.wrapper}>
